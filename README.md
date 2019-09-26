@@ -28,14 +28,14 @@ Healthy office cultures often acknowledge good work from their coworkers and pee
 -    users can see who is in their team (Slack workspace) in the webapp
 -    users can see their Slack workspace leaderboard in the webapp
 ## Tech Stack
-### Front end built using:
-#### _React_
-#### _Slack API Auth_
-#### Styled-Components
+#### Front end built using:
+-    _React_
+-    _Slack API Auth_
+-    _Styled-Components_
 #### Front end deployed to `Netlify`
 #### [Back end](https://github.com/bravolabs/bravo-be) built using:
-#### _NodeJS (Express)_
-#### _PostgreSQL_
+-    _NodeJS (Express)_
+-    _PostgreSQL_
 # APIs
 We use [Slack API](https://api.slack.com/) for both authentication and our Slack bot.
 # Environment Variables
@@ -44,11 +44,11 @@ In order for the app to function correctly, the user must set up their own envir
     REACT_APP_API_HOST = link to your API host
     REACT_APP_CLIENT_ID = your Slack app's client ID, can be found in you app's settings --> basic information
     REACT_APP_CLIENT_SECRET = your Slack app's client secret, can be found in you app's settings --> basic information
+
 # Content Licenses
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-# 4️⃣ Testing
-🚫Document what you used for testing and why
+
 # Installation Instructions
 ## Getting Started
 
@@ -89,6 +89,25 @@ Launches the test runner in the interactive watch mode.
     $ npm run build
 
 Builds the app for production to the `build` folder.
+
+### Linting fix
+
+    $ npm lint:fix
+
+Fixes linting automatically.
+
+### Coverage reporting
+
+    $ npm coverage
+
+Reports coverage with disabled test-watching.
+
+### Eject hidden modules
+
+    $ npm eject
+
+Ejects hidden modules into `package.json`.
+
 # Contributing
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 Please note we have a [code of conduct](./CODE_OF_CONDUCT.md). Please follow it in all your interactions with the project.
